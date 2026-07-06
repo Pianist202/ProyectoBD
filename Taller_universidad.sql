@@ -1,3 +1,15 @@
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `universidad`
+--
+
+CREATE DATABASE IF NOT EXISTS universidad
+CHARACTER SET utf8
+COLLATE utf8_unicode_ci;
+
+USE universidad;
+-- ----------------------
 -- phpMyAdmin SQL Dump
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
