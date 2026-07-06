@@ -1,15 +1,3 @@
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Base de datos: `universidad`
---
-
-CREATE DATABASE IF NOT EXISTS universidad
-CHARACTER SET utf8
-COLLATE utf8_unicode_ci;
-
-USE universidad;
--- ----------------------
 -- phpMyAdmin SQL Dump
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
@@ -32,6 +20,12 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `universidad`
 --
+
+CREATE DATABASE IF NOT EXISTS `universidad`
+DEFAULT CHARACTER SET utf8
+COLLATE utf8_unicode_ci;
+
+USE `universidad`;
 
 -- --------------------------------------------------------
 
@@ -146,6 +140,7 @@ ALTER TABLE `asignacion`
 ALTER TABLE `datos_maestro`
   ADD CONSTRAINT `fk_carrera` FOREIGN KEY (`ID_CARRERA`) REFERENCES `carrera` (`ID_CARRERA`),
   ADD CONSTRAINT `fk_sexo` FOREIGN KEY (`ID_SEXO`) REFERENCES `sexo` (`ID_SEXO`);
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
